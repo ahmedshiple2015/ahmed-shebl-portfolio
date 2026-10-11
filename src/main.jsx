@@ -66,8 +66,52 @@ function Contact(){
  async function copy(){try{await navigator.clipboard.writeText(email);setStatus('Email copied');}catch{setStatus('Select the email address to copy it, or use the email link.');}}
  return <section id="contact" className="contact"><h2>Let's work together.</h2><p>Have a backend role or a .NET project in mind? I'd like to hear about it.</p><a className="contact-email" href={`mailto:${email}`}>{email}<Icon name="arrow"/></a><div className="contact-actions"><button onClick={copy}><Icon name={status==='Email copied'?'check':'copy'}/>{status==='Email copied'?'Copied':'Copy email'}</button><a href={linkedin}>LinkedIn <Icon name="arrow"/></a><a href={github}>GitHub <Icon name="arrow"/></a></div><p className="copy-status" role="status">{status}</p></section>;
 }
+function Navigation(){
+ const [motion,setMotion]=useState(()=>{try{const saved=localStorage.getItem('ahmed-motion');if(saved==='on'||saved==='off')return saved==='on';}catch{}return !matchMedia('(prefers-reduced-motion: reduce)').matches;});
+ const [active,setActive]=useState(-1);
+ const [scrolled,setScrolled]=useState(false);
+ const headerRef=useRef(null);
+ useEffect(()=>{
+   document.documentElement.dataset.motion=motion?'on':'off';
+   try{localStorage.setItem('ahmed-motion',motion?'on':'off');}catch{}
+ },[motion]);
+ useEffect(()=>{
+   let frame=0;
+   const sections=['work','about','contact'].map(id=>document.getElementById(id));
+   const scenes=[...document.querySelectorAll('.project-canvas')];
+   const update=()=>{
+     frame=0;
+     const y=window.scrollY;
+     setScrolled(y>60);
+     let current=-1;
+     sections.forEach((section,i)=>{if(section.getBoundingClientRect().top<=innerHeight*.35)current=i;});
+     setActive(current);
+     const range=document.documentElement.scrollHeight-innerHeight;
+     headerRef.current.style.setProperty('--page-progress',range>0?Math.min(1,y/range):0);
+     scenes.forEach(scene=>{
+       const rect=scene.getBoundingClientRect();
+       if(rect.bottom>=0&&rect.top<=innerHeight){
+         const shift=motion?Math.max(-18,Math.min(18,(innerHeight/2-rect.top-rect.height/2)*.045)):0;
+         scene.style.setProperty('--scene-shift',shift+'px');
+       }
+     });
+   };
+   const schedule=()=>{if(!frame)frame=requestAnimationFrame(update);};
+   update();
+   addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);
+   return()=>{removeEventListener('scroll',schedule);removeEventListener('resize',schedule);cancelAnimationFrame(frame);};
+ },[motion]);
+ return <header ref={headerRef} className={`site-header${scrolled?' is-scrolled':''}`}>
+   <a className="brand" href="#" aria-label="Ahmed Shebl home">Ahmed Shebl<span>.</span></a>
+   <nav aria-label="Main navigation" style={{'--active-tab':Math.max(0,active)}} data-active={active>=0}>
+     {['Work','About','Contact'].map((label,i)=><a key={label} href={'#'+label.toLowerCase()} aria-current={active===i?'location':undefined}>{label}</a>)}
+   </nav>
+   <div className="header-controls"><button className="motion-button" onClick={()=>setMotion(v=>!v)} aria-pressed={motion} aria-label={motion?'Turn animations off':'Turn animations on'} title="Choose full scroll effects or reduced motion"><svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d={motion?'M8 5v14M16 5v14':'m8 5 11 7-11 7Z'}/></svg><span>Motion {motion?'on':'off'}</span></button><ThemeButton/></div>
+   <span className="reading-progress" aria-hidden="true"/>
+ </header>;
+}
 function App(){return <>
- <a className="skip" href="#main">Skip to content</a><header><a className="brand" href="#" aria-label="Ahmed Shebl home">Ahmed Shebl<span>.</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav><ThemeButton/></header>
+ <a className="skip" href="#main">Skip to content</a><Navigation/>
  <main id="main" tabIndex="-1"><section className="hero" aria-labelledby="intro-heading"><h1 id="intro-heading">Ahmed Shebl<span>.NET backend developer.</span></h1><div className="hero-bottom"><p>I build APIs and connected applications with C# and ASP.NET Core. Currently a Backend Developer Intern at AppsSquare.</p><div className="hero-actions"><a className="button primary" href="#work">Explore my work <Icon name="down"/></a><a className="text-link" href="./Ahmed-Shebl-CV.pdf" download>Download CV <Icon name="down"/></a></div></div></section>
  <section id="work" className="work"><div className="section-header"><h2>Selected projects</h2><p>Architecture, APIs, and the workflows behind them.</p></div><article className="showcase"><ArchitectureCanvas/></article><CommerceShowcase/><div className="smaller-projects">{smallerProjects.map(project=><SmallProject key={project.title} project={project}/>)}</div></section>
  <section id="about" className="about"><h2>A little about me.</h2><div><p className="about-lead">Business minded. Backend focused.</p><p>My Business Information Systems background helps me understand the workflow behind a feature. ITI gave me the foundation to turn that understanding into full stack .NET applications and practical AI integrations.</p><div className="current-role"><h3>Now at AppsSquare</h3><p>Backend Developer Intern · September 2026–present</p><p>A three-month internship, working on Paymob integration and Kamakan.</p></div><details><summary>Education &amp; background <Icon name="chevron"/></summary><ul><li>ITI — Full Stack &amp; Generative AI Intensive Code Camp, January–July 2026.</li><li>Tanta University — Business Information Systems, July 2025. GPA 3.22/4.00.</li><li>Tanta, Egypt · Ready to relocate.</li></ul></details><p className="cv-note">The downloadable CV predates my current internship.</p></div></section>

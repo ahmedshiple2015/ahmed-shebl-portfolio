@@ -192,3 +192,8 @@ Selected selectors use accent background, text and border. Snake uses theme surf
 ## Motion
 
 The introduction composes with a 650ms text clip. The real estate connector draws in reading order once on entry, followed by four steps staggered by 75ms; changing the selected workflow restarts the sequence without moving control focus. Mobile follows the vertical connector. Sequences finish within 650ms and never loop. Links and controls use 180–250ms transform feedback; disclosures fade in over 200ms. Reduced motion renders every section immediately and retains brief color feedback. No motion dependency or scroll listener is used.
+
+
+### Scroll navigation and motion control
+
+The sticky header remains reachable, contracts by 3% while reading, and tracks Work/About/Contact with a sliding violet indicator. A thin reading-progress line follows document position. Workflow diagrams move at a bounded 18px depth offset while in view. The Motion toggle persists an explicit on/off choice; first visits honor the operating system's reduced-motion preference. Off retains sticky navigation and section feedback without spatial animation. Scroll updates are passive and scheduled once per animation frame; cleanup cancels pending frames.
