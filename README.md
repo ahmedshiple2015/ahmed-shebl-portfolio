@@ -1,6 +1,6 @@
 # Ahmed Shebl — Backend Developer Portfolio
 
-A responsive React portfolio with charcoal/violet styling, persistent light and dark themes, project context, career timeline, and direct contact links.
+A minimal React portfolio with a bold personal introduction, large project workflow showcases, a compact about section, direct contact links, and an optional mini arcade. Charcoal/violet styling and persistent light/dark themes are included.
 
 ## Run locally
 
@@ -35,3 +35,4 @@ The production build is checked before publication. The portfolio was reviewed o
 The lazily loaded arcade contains Snake with keyboard/mobile controls, pause/resume, and a locally saved best score, plus a backend terminology matching game. Closing the arcade or switching games clears its active timers. Snake pauses when the tab becomes hidden.
 
 Run `pnpm test` to check growth, collision handling, reversal protection, the vacated-tail rule, and full-board completion.
+

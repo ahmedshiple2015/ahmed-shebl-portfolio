@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-11T08:47:36.309Z",
+  "title": "Design System: Ahmed Shebl Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0061 285.77)",
+          "oklch(27% 0.0061 285.77)",
+          "oklch(39% 0.0061 285.77)",
+          "oklch(51% 0.0061 285.77)",
+          "oklch(63% 0.0061 285.77)",
+          "oklch(75% 0.0061 285.77)",
+          "oklch(87% 0.0061 285.77)",
+          "oklch(95% 0.0061 285.77)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0154 290.88)",
+          "oklch(27% 0.0154 290.88)",
+          "oklch(39% 0.0154 290.88)",
+          "oklch(51% 0.0154 290.88)",
+          "oklch(63% 0.0154 290.88)",
+          "oklch(75% 0.0154 290.88)",
+          "oklch(87% 0.0154 290.88)",
+          "oklch(95% 0.0154 290.88)"
+        ]
+      },
+      "surface-alt": {
+        "role": "neutral",
+        "displayName": "Surface Alt",
+        "tonalRamp": [
+          "oklch(15% 0.0204 297.54)",
+          "oklch(27% 0.0204 297.54)",
+          "oklch(39% 0.0204 297.54)",
+          "oklch(51% 0.0204 297.54)",
+          "oklch(63% 0.0204 297.54)",
+          "oklch(75% 0.0204 297.54)",
+          "oklch(87% 0.0204 297.54)",
+          "oklch(95% 0.0204 297.54)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "tonalRamp": [
+          "oklch(15% 0.0098 305.40)",
+          "oklch(27% 0.0098 305.40)",
+          "oklch(39% 0.0098 305.40)",
+          "oklch(51% 0.0098 305.40)",
+          "oklch(63% 0.0098 305.40)",
+          "oklch(75% 0.0098 305.40)",
+          "oklch(87% 0.0098 305.40)",
+          "oklch(95% 0.0098 305.40)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0248 301.84)",
+          "oklch(27% 0.0248 301.84)",
+          "oklch(39% 0.0248 301.84)",
+          "oklch(51% 0.0248 301.84)",
+          "oklch(63% 0.0248 301.84)",
+          "oklch(75% 0.0248 301.84)",
+          "oklch(87% 0.0248 301.84)",
+          "oklch(95% 0.0248 301.84)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0270 303.21)",
+          "oklch(27% 0.0270 303.21)",
+          "oklch(39% 0.0270 303.21)",
+          "oklch(51% 0.0270 303.21)",
+          "oklch(63% 0.0270 303.21)",
+          "oklch(75% 0.0270 303.21)",
+          "oklch(87% 0.0270 303.21)",
+          "oklch(95% 0.0270 303.21)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15% 0.0959 299.30)",
+          "oklch(27% 0.0959 299.30)",
+          "oklch(39% 0.0959 299.30)",
+          "oklch(51% 0.0959 299.30)",
+          "oklch(63% 0.0959 299.30)",
+          "oklch(75% 0.0959 299.30)",
+          "oklch(87% 0.0959 299.30)",
+          "oklch(95% 0.0959 299.30)"
+        ]
+      },
+      "accent-bg": {
+        "role": "primary",
+        "displayName": "Accent Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0495 302.30)",
+          "oklch(27% 0.0495 302.30)",
+          "oklch(39% 0.0495 302.30)",
+          "oklch(51% 0.0495 302.30)",
+          "oklch(63% 0.0495 302.30)",
+          "oklch(75% 0.0495 302.30)",
+          "oklch(87% 0.0495 302.30)",
+          "oklch(95% 0.0495 302.30)"
+        ]
+      },
+      "button": {
+        "role": "primary",
+        "displayName": "Button",
+        "tonalRamp": [
+          "oklch(15% 0.0959 299.30)",
+          "oklch(27% 0.0959 299.30)",
+          "oklch(39% 0.0959 299.30)",
+          "oklch(51% 0.0959 299.30)",
+          "oklch(63% 0.0959 299.30)",
+          "oklch(75% 0.0959 299.30)",
+          "oklch(87% 0.0959 299.30)",
+          "oklch(95% 0.0959 299.30)"
+        ]
+      },
+      "button-text": {
+        "role": "neutral",
+        "displayName": "Button Text",
+        "tonalRamp": [
+          "oklch(15% 0.0430 301.99)",
+          "oklch(27% 0.0430 301.99)",
+          "oklch(39% 0.0430 301.99)",
+          "oklch(51% 0.0430 301.99)",
+          "oklch(63% 0.0430 301.99)",
+          "oklch(75% 0.0430 301.99)",
+          "oklch(87% 0.0430 301.99)",
+          "oklch(95% 0.0430 301.99)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.0794 300.24)",
+          "oklch(27% 0.0794 300.24)",
+          "oklch(39% 0.0794 300.24)",
+          "oklch(51% 0.0794 300.24)",
+          "oklch(63% 0.0794 300.24)",
+          "oklch(75% 0.0794 300.24)",
+          "oklch(87% 0.0794 300.24)",
+          "oklch(95% 0.0794 300.24)"
+        ]
+      },
+      "light-bg": {
+        "role": "neutral",
+        "displayName": "Light Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0069 304.24)",
+          "oklch(27% 0.0069 304.24)",
+          "oklch(39% 0.0069 304.24)",
+          "oklch(51% 0.0069 304.24)",
+          "oklch(63% 0.0069 304.24)",
+          "oklch(75% 0.0069 304.24)",
+          "oklch(87% 0.0069 304.24)",
+          "oklch(95% 0.0069 304.24)"
+        ]
+      },
+      "light-text": {
+        "role": "neutral",
+        "displayName": "Light Text",
+        "tonalRamp": [
+          "oklch(15% 0.0190 298.77)",
+          "oklch(27% 0.0190 298.77)",
+          "oklch(39% 0.0190 298.77)",
+          "oklch(51% 0.0190 298.77)",
+          "oklch(63% 0.0190 298.77)",
+          "oklch(75% 0.0190 298.77)",
+          "oklch(87% 0.0190 298.77)",
+          "oklch(95% 0.0190 298.77)"
+        ]
+      },
+      "light-muted": {
+        "role": "neutral",
+        "displayName": "Light Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0368 305.65)",
+          "oklch(27% 0.0368 305.65)",
+          "oklch(39% 0.0368 305.65)",
+          "oklch(51% 0.0368 305.65)",
+          "oklch(63% 0.0368 305.65)",
+          "oklch(75% 0.0368 305.65)",
+          "oklch(87% 0.0368 305.65)",
+          "oklch(95% 0.0368 305.65)"
+        ]
+      },
+      "light-line": {
+        "role": "neutral",
+        "displayName": "Light Line",
+        "tonalRamp": [
+          "oklch(15% 0.0251 309.34)",
+          "oklch(27% 0.0251 309.34)",
+          "oklch(39% 0.0251 309.34)",
+          "oklch(51% 0.0251 309.34)",
+          "oklch(63% 0.0251 309.34)",
+          "oklch(75% 0.0251 309.34)",
+          "oklch(87% 0.0251 309.34)",
+          "oklch(95% 0.0251 309.34)"
+        ]
+      },
+      "light-accent": {
+        "role": "primary",
+        "displayName": "Light Accent",
+        "tonalRamp": [
+          "oklch(15% 0.1445 299.95)",
+          "oklch(27% 0.1445 299.95)",
+          "oklch(39% 0.1445 299.95)",
+          "oklch(51% 0.1445 299.95)",
+          "oklch(63% 0.1445 299.95)",
+          "oklch(75% 0.1445 299.95)",
+          "oklch(87% 0.1445 299.95)",
+          "oklch(95% 0.1445 299.95)"
+        ]
+      },
+      "light-accent-bg": {
+        "role": "primary",
+        "displayName": "Light Accent Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0309 304.26)",
+          "oklch(27% 0.0309 304.26)",
+          "oklch(39% 0.0309 304.26)",
+          "oklch(51% 0.0309 304.26)",
+          "oklch(63% 0.0309 304.26)",
+          "oklch(75% 0.0309 304.26)",
+          "oklch(87% 0.0309 304.26)",
+          "oklch(95% 0.0309 304.26)"
+        ]
+      },
+      "light-surface": {
+        "role": "neutral",
+        "displayName": "Light Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(27% 0.0000 89.88)",
+          "oklch(39% 0.0000 89.88)",
+          "oklch(51% 0.0000 89.88)",
+          "oklch(63% 0.0000 89.88)",
+          "oklch(75% 0.0000 89.88)",
+          "oklch(87% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "light-surface-alt": {
+        "role": "neutral",
+        "displayName": "Light Surface Alt",
+        "tonalRamp": [
+          "oklch(15% 0.0169 304.79)",
+          "oklch(27% 0.0169 304.79)",
+          "oklch(39% 0.0169 304.79)",
+          "oklch(51% 0.0169 304.79)",
+          "oklch(63% 0.0169 304.79)",
+          "oklch(75% 0.0169 304.79)",
+          "oklch(87% 0.0169 304.79)",
+          "oklch(95% 0.0169 304.79)"
+        ]
+      },
+      "estate-canvas": {
+        "role": "secondary",
+        "displayName": "Estate Canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0789 300.46)",
+          "oklch(27% 0.0789 300.46)",
+          "oklch(39% 0.0789 300.46)",
+          "oklch(51% 0.0789 300.46)",
+          "oklch(63% 0.0789 300.46)",
+          "oklch(75% 0.0789 300.46)",
+          "oklch(87% 0.0789 300.46)",
+          "oklch(95% 0.0789 300.46)"
+        ]
+      },
+      "estate-ink": {
+        "role": "secondary",
+        "displayName": "Estate Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0767 299.83)",
+          "oklch(27% 0.0767 299.83)",
+          "oklch(39% 0.0767 299.83)",
+          "oklch(51% 0.0767 299.83)",
+          "oklch(63% 0.0767 299.83)",
+          "oklch(75% 0.0767 299.83)",
+          "oklch(87% 0.0767 299.83)",
+          "oklch(95% 0.0767 299.83)"
+        ]
+      },
+      "estate-node": {
+        "role": "secondary",
+        "displayName": "Estate Node",
+        "tonalRamp": [
+          "oklch(15% 0.0365 303.11)",
+          "oklch(27% 0.0365 303.11)",
+          "oklch(39% 0.0365 303.11)",
+          "oklch(51% 0.0365 303.11)",
+          "oklch(63% 0.0365 303.11)",
+          "oklch(75% 0.0365 303.11)",
+          "oklch(87% 0.0365 303.11)",
+          "oklch(95% 0.0365 303.11)"
+        ]
+      },
+      "estate-line": {
+        "role": "secondary",
+        "displayName": "Estate Line",
+        "tonalRamp": [
+          "oklch(15% 0.1022 303.22)",
+          "oklch(27% 0.1022 303.22)",
+          "oklch(39% 0.1022 303.22)",
+          "oklch(51% 0.1022 303.22)",
+          "oklch(63% 0.1022 303.22)",
+          "oklch(75% 0.1022 303.22)",
+          "oklch(87% 0.1022 303.22)",
+          "oklch(95% 0.1022 303.22)"
+        ]
+      },
+      "commerce-canvas": {
+        "role": "secondary",
+        "displayName": "Commerce Canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0289 302.72)",
+          "oklch(27% 0.0289 302.72)",
+          "oklch(39% 0.0289 302.72)",
+          "oklch(51% 0.0289 302.72)",
+          "oklch(63% 0.0289 302.72)",
+          "oklch(75% 0.0289 302.72)",
+          "oklch(87% 0.0289 302.72)",
+          "oklch(95% 0.0289 302.72)"
+        ]
+      },
+      "commerce-ink": {
+        "role": "secondary",
+        "displayName": "Commerce Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0254 305.85)",
+          "oklch(27% 0.0254 305.85)",
+          "oklch(39% 0.0254 305.85)",
+          "oklch(51% 0.0254 305.85)",
+          "oklch(63% 0.0254 305.85)",
+          "oklch(75% 0.0254 305.85)",
+          "oklch(87% 0.0254 305.85)",
+          "oklch(95% 0.0254 305.85)"
+        ]
+      },
+      "commerce-node": {
+        "role": "secondary",
+        "displayName": "Commerce Node",
+        "tonalRamp": [
+          "oklch(15% 0.0424 303.95)",
+          "oklch(27% 0.0424 303.95)",
+          "oklch(39% 0.0424 303.95)",
+          "oklch(51% 0.0424 303.95)",
+          "oklch(63% 0.0424 303.95)",
+          "oklch(75% 0.0424 303.95)",
+          "oklch(87% 0.0424 303.95)",
+          "oklch(95% 0.0424 303.95)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Name",
+        "purpose": "Dominant personal introduction."
+      },
+      "headline": {
+        "displayName": "Contact headline",
+        "purpose": "Contact invitation."
+      },
+      "title": {
+        "displayName": "Project title",
+        "purpose": "Project captions."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Readable descriptions."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation and controls."
+      },
+      "score": {
+        "displayName": "Score",
+        "purpose": "Tabular game statistics."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "anchor-scroll",
+        "value": "smooth",
+        "purpose": "Anchor navigation; auto with reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "intro-stack",
+        "value": "1000px"
+      },
+      {
+        "name": "games-stack",
+        "value": "700px"
+      },
+      {
+        "name": "mobile",
+        "value": "650px"
+      },
+      {
+        "name": "header-wrap",
+        "value": "370px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled main action.",
+      "html": "<button class=\"ds-primary\">Explore my work <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\"><path d=\"M12 4v16m-6-6 6 6 6-6\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;padding:12px 21px;border-radius:12px;font:600 14px \"DM Sans\",sans-serif;cursor:pointer;background:var(--button,#c7b1f4);color:var(--button-text,#21182e);border:0}.ds-primary:hover{filter:brightness(1.08)}.ds-primary:focus-visible{outline:2px solid var(--focus,#d5c2fa);outline-offset:5px}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet game action.",
+      "html": "<button class=\"ds-secondary\">Pause</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;padding:12px 21px;border-radius:12px;font:600 14px \"DM Sans\",sans-serif;cursor:pointer;background:transparent;color:var(--text,#f3f0f7);border:1px solid var(--line,#3b3544)}.ds-secondary:focus-visible{outline:2px solid var(--focus,#d5c2fa);outline-offset:5px}.ds-secondary:disabled{opacity:.55;cursor:default}"
+    },
+    {
+      "name": "Theme control",
+      "kind": "button",
+      "refersTo": "theme-control",
+      "description": "Theme switch with explicit target name.",
+      "html": "<button class=\"ds-theme\" aria-label=\"Switch to light mode\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5\"/></svg>Light</button>",
+      "css": ".ds-theme{display:flex;align-items:center;gap:10px;min-height:44px;padding:9px 14px;border:1px solid var(--line,#3b3544);border-radius:12px;background:transparent;color:var(--text,#f3f0f7);font:13px \"DM Sans\",sans-serif;cursor:pointer}.ds-theme:hover{border-color:var(--accent,#c7b1f4)}.ds-theme:focus-visible{outline:2px solid var(--focus,#d5c2fa);outline-offset:5px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Quiet section anchors.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Sample navigation\"><a href=\"#work\">Work</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;gap:35px}.ds-nav a{font:14px \"DM Sans\",sans-serif;color:var(--muted,#b7b1c2);padding:12px 0;text-decoration:none}.ds-nav a:hover{color:var(--accent,#c7b1f4)}.ds-nav a:focus-visible{outline:2px solid var(--focus,#d5c2fa);outline-offset:5px}"
+    },
+    {
+      "name": "Workflow exhibit",
+      "kind": "custom",
+      "refersTo": "project-canvas",
+      "description": "Connected nodes for an actual project workflow.",
+      "html": "<section class=\"ds-canvas\"><h3>Real estate, connected.</h3><ol class=\"ds-flow\"><li>Host / API</li><li>CQRS handlers</li><li>Domain modules</li><li>SQL Server</li></ol></section>",
+      "css": ".ds-canvas{background:#c9b6ed;color:#2b1a44;border-radius:16px;padding:30px 35px 24px;font-family:\"DM Sans\",sans-serif}.ds-canvas h3{font-size:30px;font-weight:500;letter-spacing:-.03em;margin:0}.ds-flow{display:flex;gap:35px;list-style:none;padding:0;margin:65px 0;position:relative}.ds-flow:before{content:\"\";position:absolute;left:10px;right:10px;top:50%;height:1px;background:#775b9b}.ds-flow li{position:relative;flex:1;background:#e9dff9;border:1px solid #775b9b;border-radius:12px;text-align:center;padding:27px 10px;font-size:18px}@media(max-width:650px){.ds-flow{flex-direction:column;gap:19px;margin:28px 0}.ds-flow:before{width:1px;left:50%;top:10px;bottom:10px;height:auto}.ds-flow li{padding:15px;font-size:16px}}"
+    },
+    {
+      "name": "Game selector",
+      "kind": "button",
+      "refersTo": "game-selector",
+      "description": "Pressed selector for optional games.",
+      "html": "<button class=\"ds-selector\" aria-pressed=\"true\">Snake</button>",
+      "css": ".ds-selector{min-height:44px;padding:10px 17px;border:1px solid var(--line,#3b3544);background:transparent;border-radius:8px;color:var(--text,#f3f0f7);font:14px \"DM Sans\",sans-serif;cursor:pointer}.ds-selector[aria-pressed=true]{background:var(--accent-bg,#342944);border-color:var(--accent,#c7b1f4);color:var(--accent,#c7b1f4)}.ds-selector:focus-visible{outline:2px solid var(--focus,#d5c2fa);outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Connected work, clearly presented",
+    "overview": "Charcoal ground, lavender accents, flat geometry, quiet navigation and crisp self-hosted typography make real backend work readable. Open space and a restrained hierarchy give names, roles and workflows room to stand on their own.\n\nThe light theme translates the same relationships into pale paper and deep violet. Project exhibits keep their own fixed palettes so diagrams stay coherent across both themes.",
+    "keyCharacteristics": [
+      "Open spacing and large, medium-weight typography.",
+      "Flat, softly rounded workflow exhibits.",
+      "Clear theme-aware controls and visible keyboard focus."
+    ],
+    "rules": [
+      {
+        "name": "The Theme Relationship Rule",
+        "body": "Use theme tokens for page content and controls; preserve fixed project palettes within their exhibits.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Keep text and numeric scores in DM Sans; reserve monospace for literal code symbols.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Use tonal contrast and borders to distinguish surfaces without adding shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve theme relationships and visible keyboard focus.",
+      "Do use connected nodes to make actual workflows readable.",
+      "Do keep numeric game scores in DM Sans with tabular numerals.",
+      "Do adapt diagrams and columns to a single mobile reading order."
+    ],
+    "donts": [
+      "Don't add shadows to these flat surfaces.",
+      "Don't introduce another display family into this system.",
+      "Don't substitute invented metrics or decorative code for verified project content."
+    ]
+  }
+}
