@@ -1,5 +1,11 @@
 # Ahmed Shebl â€” Backend Developer Portfolio
 
+[![CI](https://github.com/ahmedshiple2015/ahmed-shebl-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/ahmedshiple2015/ahmed-shebl-portfolio/actions/workflows/ci.yml)
+
+[Live portfolio](https://ahmedshiple2015.github.io/ahmed-shebl-portfolio/) · [30-second walkthrough](docs/DEMO.md)
+
+![Portfolio preview](docs/media/preview.png)
+
 A minimal React portfolio with a bold personal introduction, large project workflow showcases, a compact about section, direct contact links, and an optional mini arcade. Charcoal/violet styling and persistent light/dark themes are included.
 
 ## Run locally
