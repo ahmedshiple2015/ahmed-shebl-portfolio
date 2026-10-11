@@ -197,3 +197,8 @@ The introduction composes with a 650ms text clip. The real estate connector draw
 ### Scroll navigation and motion control
 
 The sticky header remains reachable, contracts by 3% while reading, and tracks Work/About/Contact with a sliding violet indicator. A thin reading-progress line follows document position. Workflow diagrams move at a bounded 18px depth offset while in view. Motion is enabled by default in the document, as requested by the owner. The motion toggle and saved motion preference have been removed. Scroll updates are passive and scheduled once per animation frame; cleanup cancels pending frames.
+
+
+## Project imagery and detail pages
+
+Home project previews use actual 1200 × 800 application captures, with the first two large exhibits and two supporting previews. Each links to a stable query-based case study (`?project=slug`) so direct loads work on GitHub Pages without server route rewrites. Case studies present role, scope, stack, authored contribution, workflow, a screenshot gallery, verification limits, and next-project navigation. All raster captures originate from local application walkthroughs on 11 October 2026; real estate is a frontend-only preview. Detail layouts stack on mobile and retain the established theme tokens.
