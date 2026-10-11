@@ -22,8 +22,6 @@ html{scroll-padding-top:130px}
 .site-header nav a{position:relative;text-align:center;min-height:44px;padding:10px 5px}
 .site-header nav a[aria-current]{color:var(--accent)}
 .header-controls{display:flex;gap:10px;align-items:center}
-.motion-button{display:flex;align-items:center;gap:8px;min-height:44px;padding:9px 12px;background:none;border:1px solid var(--line);border-radius:12px;font-size:13px;white-space:nowrap}
-.motion-button[aria-pressed=true]{color:var(--accent);border-color:var(--accent)}
 .reading-progress{position:absolute;bottom:0;left:16px;right:16px;height:2px;background:var(--accent);transform:scaleX(var(--page-progress,0));transform-origin:left}
 @keyframes intro-compose{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
 @keyframes workflow-connect{from{transform:scaleX(0)}to{transform:scaleX(1)}}
@@ -51,14 +49,12 @@ html{scroll-padding-top:130px}
  :root[data-motion=on] .text-link:hover .icon,:root[data-motion=on] .contact-email:hover .icon,:root[data-motion=on] .canvas-tabs button:hover .icon{transform:translate(2px,-2px)}
  :root[data-motion=on] .primary:hover .icon{transform:translateY(2px)}
 }
-:root[data-motion=off]{scroll-behavior:auto}
-:root[data-motion=off] .button,:root[data-motion=off] .theme-button,:root[data-motion=off] .text-link,:root[data-motion=off] .canvas-tabs button{transition:color 100ms ease,background-color 100ms ease,border-color 100ms ease}
 @media(max-width:850px){.site-header{padding-inline:22px;gap:12px}.site-header nav{grid-template-columns:repeat(3,65px)}.site-header nav:before{width:65px}.brand{font-size:18px}.theme-button span{display:none}}
 @media(max-width:650px){
  .site-header{display:grid;grid-template-columns:1fr auto;height:120px;padding-block:12px}
  .site-header nav{grid-row:2;grid-column:1/-1;justify-content:center;grid-template-columns:repeat(3,86px)}
  .site-header nav:before{width:86px;left:calc(50% - 129px)}
- .header-controls{grid-column:2;grid-row:1}.theme-button{margin:0}.motion-button{font-size:12px;padding:8px}
+ .header-controls{grid-column:2;grid-row:1}.theme-button{margin:0}
  :root[data-motion=on] .flow-entered .architecture-flow:before{transform-origin:top;animation-name:workflow-connect-mobile}
  :root[data-motion=on] .flow-entered .architecture-flow li{animation-name:workflow-step-mobile}
 }

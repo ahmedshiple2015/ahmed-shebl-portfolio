@@ -67,14 +67,9 @@ function Contact(){
  return <section id="contact" className="contact"><h2>Let's work together.</h2><p>Have a backend role or a .NET project in mind? I'd like to hear about it.</p><a className="contact-email" href={`mailto:${email}`}>{email}<Icon name="arrow"/></a><div className="contact-actions"><button onClick={copy}><Icon name={status==='Email copied'?'check':'copy'}/>{status==='Email copied'?'Copied':'Copy email'}</button><a href={linkedin}>LinkedIn <Icon name="arrow"/></a><a href={github}>GitHub <Icon name="arrow"/></a></div><p className="copy-status" role="status">{status}</p></section>;
 }
 function Navigation(){
- const [motion,setMotion]=useState(()=>{try{const saved=localStorage.getItem('ahmed-motion');if(saved==='on'||saved==='off')return saved==='on';}catch{}return !matchMedia('(prefers-reduced-motion: reduce)').matches;});
  const [active,setActive]=useState(-1);
  const [scrolled,setScrolled]=useState(false);
  const headerRef=useRef(null);
- useEffect(()=>{
-   document.documentElement.dataset.motion=motion?'on':'off';
-   try{localStorage.setItem('ahmed-motion',motion?'on':'off');}catch{}
- },[motion]);
  useEffect(()=>{
    let frame=0;
    const sections=['work','about','contact'].map(id=>document.getElementById(id));
@@ -91,7 +86,7 @@ function Navigation(){
      scenes.forEach(scene=>{
        const rect=scene.getBoundingClientRect();
        if(rect.bottom>=0&&rect.top<=innerHeight){
-         const shift=motion?Math.max(-18,Math.min(18,(innerHeight/2-rect.top-rect.height/2)*.045)):0;
+         const shift=Math.max(-18,Math.min(18,(innerHeight/2-rect.top-rect.height/2)*.045));
          scene.style.setProperty('--scene-shift',shift+'px');
        }
      });
@@ -100,13 +95,13 @@ function Navigation(){
    update();
    addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);
    return()=>{removeEventListener('scroll',schedule);removeEventListener('resize',schedule);cancelAnimationFrame(frame);};
- },[motion]);
+ },[]);
  return <header ref={headerRef} className={`site-header${scrolled?' is-scrolled':''}`}>
    <a className="brand" href="#" aria-label="Ahmed Shebl home">Ahmed Shebl<span>.</span></a>
    <nav aria-label="Main navigation" style={{'--active-tab':Math.max(0,active)}} data-active={active>=0}>
      {['Work','About','Contact'].map((label,i)=><a key={label} href={'#'+label.toLowerCase()} aria-current={active===i?'location':undefined}>{label}</a>)}
    </nav>
-   <div className="header-controls"><button className="motion-button" onClick={()=>setMotion(v=>!v)} aria-pressed={motion} aria-label={motion?'Turn animations off':'Turn animations on'} title="Choose full scroll effects or reduced motion"><svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d={motion?'M8 5v14M16 5v14':'m8 5 11 7-11 7Z'}/></svg><span>Motion {motion?'on':'off'}</span></button><ThemeButton/></div>
+   <div className="header-controls"><ThemeButton/></div>
    <span className="reading-progress" aria-hidden="true"/>
  </header>;
 }
