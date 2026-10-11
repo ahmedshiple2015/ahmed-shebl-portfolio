@@ -187,3 +187,8 @@ Selected selectors use accent background, text and border. Snake uses theme surf
 - Don't add shadows to these flat surfaces.
 - Don't introduce another display family into this system.
 - Don't substitute invented metrics or decorative code for verified project content.
+
+
+## Motion
+
+The introduction composes with a 650ms text clip. The real estate connector draws in reading order once on entry, followed by four steps staggered by 75ms; changing the selected workflow restarts the sequence without moving control focus. Mobile follows the vertical connector. Sequences finish within 650ms and never loop. Links and controls use 180–250ms transform feedback; disclosures fade in over 200ms. Reduced motion renders every section immediately and retains brief color feedback. No motion dependency or scroll listener is used.
